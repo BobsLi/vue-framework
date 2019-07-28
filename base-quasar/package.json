@@ -1,0 +1,40 @@
+{
+  "name": "health-os",
+  "version": "0.0.1",
+  "description": "health-os-web",
+  "productName": "health-os-web",
+  "cordovaId": "org.cordova.quasar.app",
+  "author": "BobsLi <liliangbo@genebang.com>",
+  "private": true,
+  "scripts": {
+    "dev": "quasar dev",
+    "build": "quasar build",
+    "build:pwa": "quasar build -m pwa",
+    "lint": "eslint --ext .js,.vue src",
+    "test": "echo \"No test specified\" && exit 0"
+  },
+  "dependencies": {
+    "@antv/g6": "^3.0.4",
+    "@quasar/extras": "^1.2.0",
+    "axios": "^0.19.0",
+    "normalize.css": "^8.0.1",
+    "quasar": "^1.0.5",
+    "vue-i18n": "^7.3.3"
+  },
+  "devDependencies": {
+    "@quasar/app": "^1.0.4",
+    "@vue/eslint-config-standard": "^4.0.0",
+    "babel-eslint": "^10.0.2",
+    "eslint": "^5.10.0",
+    "eslint-loader": "^2.2.1",
+    "eslint-plugin-vue": "^5.2.3"
+  },
+  "engines": {
+    "node": ">= 8.9.0",
+    "npm": ">= 5.6.0",
+    "yarn": ">= 1.6.0"
+  },
+  "browserslist": [
+    "last 1 version, not dead, ie >= 11"
+  ]
+}

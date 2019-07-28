@@ -1,0 +1,71 @@
+.q-btn
+	padding 10px 16px
+	min-height auto
+	border-radius 4px
+	line-height 1
+	appearance none
+	z-index 1
+	&.q-btn--standard
+		
+	&.q-btn--rectangle
+		border-radius 6px
+	&.q-btn--outline
+		border-radius 4px
+	&.btn-shadowed
+		outline 0
+		color white
+		font-weight normal
+		box-shadow: none
+		&:not(.disabled)
+			&:before
+				content ''
+				background inherit
+				display block
+				position absolute
+				width 100%
+				height 3rem
+				top auto
+				bottom -10px
+				left 0
+				filter blur(5px) brightness(0.95) opacity(0.3)
+				z-index -1
+		&[disabled]
+			&:before
+				display: none
+		.bg-primary
+			button-variant($primary)
+		.bg-secondary
+			button-variant($secondary)
+		.bg-accent
+			button-variant($accent)
+		.bg-positive
+			button-variant($positive)
+		.bg-negative
+			button-variant($negative)
+		.bg-info
+			button-variant($info)
+		.bg-warning
+			button-variant($warning)
+//小按钮
+.btn-sm 
+	font-size 1.2rem
+	padding 6px 10px
+	line-height 1.5
+//大按钮
+.btn-lg
+	font-size 1.6rem
+	padding 14px 40px
+//超大按钮
+.btn-xl
+	font-size 2rem
+	padding 14px 79px
+	&.q-btn--rectangle
+		border-radius 8px
+
+button-variant($btn-color)
+	&:not(.disabled)
+		background linear-gradient(270deg,rgba($btn-color, 1) 0%, rgba($btn-color, 0.6) 100%) !important;
+		&:hover
+			background linear-gradient(270deg,rgba($btn-color, 0.8) 0%, rgba($btn-color, 0.6) 100%) !important;
+		&:focus
+			background linear-gradient(270deg,rgba($btn-color, 1) 0%, rgba($btn-color, 0.6) 100%) !important;
